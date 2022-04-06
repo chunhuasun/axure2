@@ -7,6 +7,8 @@
   text-align:center;
   line-height:normal;
 }
+.box_1 {
+}
 ._标题1 {
   font-family:'Arial Normal', 'Arial';
   font-weight:bold;
@@ -83,6 +85,9 @@
 .menu_item {
 }
 .sticky_1 {
+  text-align:left;
+}
+.sticky_2 {
   text-align:left;
 }
 .sticky_3 {
