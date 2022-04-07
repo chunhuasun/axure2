@@ -3,7 +3,7 @@
   background-image:none;
   position:static;
   left:auto;
-  width:463px;
+  width:495px;
   margin-left:0;
   margin-right:0;
   text-align:left;
@@ -12,13 +12,13 @@
   position:absolute;
   z-index:0;
 }
-#u260_div {
+#u534_div {
   border-width:0px;
   position:absolute;
   left:0px;
   top:0px;
-  width:358px;
-  height:85px;
+  width:390px;
+  height:169px;
   background:inherit;
   background-color:rgba(54, 169, 206, 1);
   border:none;
@@ -28,22 +28,24 @@
   box-shadow:5px 5px 5px rgba(0, 0, 0, 0.2);
   font-size:18px;
   color:#000000;
+  line-height:16px;
 }
-#u260 {
+#u534 {
   border-width:0px;
   position:absolute;
   left:105px;
   top:89px;
-  width:358px;
-  height:85px;
+  width:390px;
+  height:169px;
   font-size:18px;
   color:#000000;
+  line-height:16px;
 }
-#u261 {
+#u535 {
   border-width:0px;
   position:absolute;
   left:10px;
   top:10px;
-  width:338px;
+  width:370px;
   word-wrap:break-word;
 }
