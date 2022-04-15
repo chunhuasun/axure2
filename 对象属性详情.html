@@ -401,6 +401,9 @@
         </div>
       </div>
 
+      <!-- Unnamed (矩形) [footnote] -->
+      <div id="u535_ann" class="annotation"></div>
+
       <!-- Unnamed (矩形) -->
       <div id="u537" class="ax_default label">
         <div id="u537_div" class=""></div>
@@ -621,7 +624,7 @@
         <img id="u576_img" class="img " src="images/服务详情/u168.png"/>
         <!-- Unnamed () -->
         <div id="u577" class="text">
-          <p><span>服务14：属性列表查询</span></p><p><span>入参：对象ID、属性编码、属性名称、属性类型</span></p><p><span>出参：带页码的属性列表</span></p><p><span>实现逻辑：</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; 查询指定对象下的属性列表</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; 属性名称、属性编码可进行模糊匹配</span></p>
+          <p><span>服务14：属性列表查询</span></p><p><span>入参：对象ID、属性编码、属性名称、属性类型</span></p><p><span>出参：属性列表</span></p><p><span>实现逻辑：</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; 查询指定对象下的属性列表</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; 属性名称、属性编码可进行模糊匹配</span></p>
         </div>
       </div>
 
@@ -1197,7 +1200,7 @@
         <img id="u702_img" class="img " src="images/对象属性详情/u702.png"/>
         <!-- Unnamed () -->
         <div id="u703" class="text">
-          <p><span>服务18：编辑对象属性</span></p><p><span>入参：对象属性结构体、对象ID</span></p><p><span>出参：操作成功、失败标示</span></p><p><span>实现逻辑：</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; 1、结构体中有属性ID：</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 有则修改对应的属性</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 无则新增属性</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; 2、调用服务后：</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 对象状态统一变更为：&nbsp; 0-无效</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; 3、此处的删除属性为直接删除，而非修改状态</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 通过版本表记录修改之前的对象属性信息</span></p>
+          <p><span>服务18：编辑对象属性</span></p><p><span>入参：多组&lt;对象属性结构体、对象ID、操作标识（0-新增、1-修改、2-删除）&gt;</span></p><p><span>出参：操作成功、失败标示</span></p><p><span>实现逻辑：</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; 1、结构体中有属性ID：</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 有则修改对应的属性</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 无则新增属性</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; 2、此处的删除属性为直接删除，而非修改状态</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 通过版本表记录修改之前的对象属性信息</span></p>
         </div>
       </div>
 

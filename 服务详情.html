@@ -41,6 +41,9 @@
         </div>
       </div>
 
+      <!-- Unnamed (矩形) [footnote] -->
+      <div id="u125_ann" class="annotation"></div>
+
       <!-- Unnamed (矩形) -->
       <div id="u127" class="ax_default label">
         <div id="u127_div" class=""></div>
@@ -190,7 +193,7 @@
         <img id="u152_img" class="img " src="images/服务详情/u152.png"/>
         <!-- Unnamed () -->
         <div id="u153" class="text">
-          <p><span>服务5：编辑服务基础信息</span></p><p><span>入参：服务基础信息结构体</span></p><p><span>出参：操作成功、失败标示</span></p><p><span>实现逻辑：</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; 1、结构体中有服务主体-对象ID：</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 有则修改对应的服务</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 无则新增服务</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; 2、调用服务后：</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 对象状态统一变更为：&nbsp; 0-无效</span></p>
+          <p><span>服务5：编辑服务基础信息</span></p><p><span>入参：服务基础信息结构体</span></p><p><span>出参：操作成功、失败标示</span></p><p><span>实现逻辑：</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; 1、结构体中有服务主体-对象ID：</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 有则修改对应的服务</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 无则新增服务</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; 2、修改服务状态为：0-草稿</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 新增服务状态为：2-停用</span></p>
         </div>
       </div>
 
@@ -554,7 +557,7 @@
 
       <!-- Unnamed (HTML按钮) -->
       <div id="u232" class="ax_default html_button">
-        <input id="u232_input" type="submit" value="删除"/>
+        <input id="u232_input" type="submit" value="停用"/>
       </div>
 
       <!-- Unnamed (HTML按钮) [footnote] -->
@@ -624,7 +627,7 @@
         <img id="u244_img" class="img " src="images/服务设计/u88.png"/>
         <!-- Unnamed () -->
         <div id="u245" class="text">
-          <p><span>服务8：方法状态变更</span></p><p><span>变更标示：0&nbsp; - 无效</span></p>
+          <p><span>服务8：方法状态变更</span></p><p><span>变更标示：2&nbsp; - 停用</span></p>
         </div>
       </div>
 
@@ -696,7 +699,7 @@
 
       <!-- Unnamed (HTML按钮) -->
       <div id="u258" class="ax_default html_button">
-        <input id="u258_input" type="submit" value="发布"/>
+        <input id="u258_input" type="submit" value="启用"/>
       </div>
 
       <!-- Unnamed (HTML按钮) [footnote] -->
@@ -707,7 +710,7 @@
         <img id="u259_img" class="img " src="images/服务设计/u107.png"/>
         <!-- Unnamed () -->
         <div id="u260" class="text">
-          <p><span>服务8：方法状态变更</span></p><p><span>变更标示：1 - 有效</span></p>
+          <p><span>服务8：方法状态变更</span></p><p><span>变更标示：1 - 启用</span></p>
         </div>
       </div>
 
@@ -724,7 +727,7 @@
 
       <!-- Unnamed (HTML按钮) -->
       <div id="u263" class="ax_default html_button">
-        <input id="u263_input" type="submit" value="批量删除"/>
+        <input id="u263_input" type="submit" value="批量停用"/>
       </div>
 
       <!-- Unnamed (HTML按钮) [footnote] -->
@@ -732,7 +735,7 @@
 
       <!-- Unnamed (HTML按钮) -->
       <div id="u264" class="ax_default html_button">
-        <input id="u264_input" type="submit" value="批量发布"/>
+        <input id="u264_input" type="submit" value="批量启用"/>
       </div>
 
       <!-- Unnamed (HTML按钮) [footnote] -->
@@ -752,7 +755,7 @@
         <img id="u267_img" class="img " src="images/服务详情/u267.png"/>
         <!-- Unnamed () -->
         <div id="u268" class="text">
-          <p><span>服务16：批量方法状态变更</span></p><p><span>入参：一组&lt;方法ID&gt;、变更标示</span></p><p><span>出参：操作成功、失败标示</span></p><p><span>实现逻辑：</span></p><p><span>&nbsp;&nbsp; &nbsp;&nbsp; 变更状态需要进行前置校验，满足校验的才能变更</span></p>
+          <p><span>服务16：批量方法状态变更</span></p><p><span>入参：多组&lt;方法ID、变更标示&gt;</span></p><p><span>出参：操作成功、失败标示</span></p><p><span>实现逻辑：</span></p><p><span>&nbsp;&nbsp; &nbsp;&nbsp; 变更状态需要进行前置校验，满足校验的才能变更</span></p>
         </div>
       </div>
 
