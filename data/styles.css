@@ -20,6 +20,8 @@
   text-align:center;
   line-height:normal;
 }
+._图像 {
+}
 ._标题1 {
   font-family:'Arial Normal', 'Arial';
   font-weight:bold;
@@ -115,6 +117,9 @@
 }
 .sticky_4 {
   text-align:left;
+}
+.marker {
+  color:#FFFFFF;
 }
 .flow_shape {
 }
