@@ -130,6 +130,78 @@
           <p><span>页面信息待完善：</span></p><p><span>1、梳理每块信息的对应关系</span></p><p><span>2、梳理未保存的信息，及处理方式</span></p><p><span>&nbsp;&nbsp; &nbsp; 例如：业务逻辑</span></p>
         </div>
       </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u376" class="ax_default sticky_4">
+        <div id="u376_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u377" class="text">
+          <p><span>select a.obj_url as '服务名称',&nbsp; </span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; d.obj_code as '入参类名',</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; f.obj_code as '出参类名',</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; b.obj_method_code as '方法名称'&nbsp; </span></p><p><span>&nbsp;&nbsp; from mdp_service_information a ,</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mdp_obj_method_information b,</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; mdp_obj_group_information c,</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; mdp_obj_information d ,</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; mdp_obj_group_information e,</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; mdp_obj_information f </span></p><p><span>&nbsp; where a.obj_id = b.obj_id </span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; and b.obj_method_info = 'B0049-售后单详情查询API'</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; and b.in_obj_group_id = c.obj_group_id </span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; and c.obj_id = d.obj_id</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; and b.out_obj_group_id = e.obj_group_id </span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; and e.obj_id = f.obj_id</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u378" class="ax_default sticky_4">
+        <div id="u378_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u379" class="text">
+          <p><span>select * </span></p><p><span>&nbsp; from mdp_query_complete_info </span></p><p><span>&nbsp;where obj_method_info = 'B0036-售后管理列表查询'</span></p><p><span>&nbsp;&nbsp; and parameter_type = '入参信息'</span></p><p><span>-- 可通过 deep_level '层级深度' 分级嵌套结构的&nbsp; &nbsp;&nbsp; </span></p><p><span>-- 可通过 obj_name '对象名称' 查看具体的父亲结构</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u380" class="ax_default sticky_4">
+        <div id="u380_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u381" class="text">
+          <p><span>暂无</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u382" class="ax_default sticky_4">
+        <div id="u382_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u383" class="text">
+          <p><span>暂无</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u384" class="ax_default sticky_4">
+        <div id="u384_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u385" class="text">
+          <p><span>暂无数据</span></p><p><span>后续拆分表，独立存储</span></p><p><span>&nbsp;select in_para_json as '入参报文',</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; out_para_json as&nbsp; '出参报文' </span></p><p><span>&nbsp; from mdp_obj_method_information </span></p><p><span>&nbsp;where obj_method_info = 'B0049-售后单详情查询API'</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u386" class="ax_default sticky_4">
+        <div id="u386_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u387" class="text">
+          <p><span>暂无</span></p><p><span>等同文件名称去掉前缀</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u388" class="ax_default sticky_4">
+        <div id="u388_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u389" class="text">
+          <p><span>暂无</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u390" class="ax_default sticky_4">
+        <div id="u390_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u391" class="text">
+          <p><span>select * </span></p><p><span>&nbsp; from mdp_query_complete_info </span></p><p><span>&nbsp;where obj_method_info = 'B0036-售后管理列表查询'</span></p><p><span>&nbsp;&nbsp; and parameter_type = '出参信息'</span></p><p><span>-- 可通过 deep_level '层级深度' 分级嵌套结构的&nbsp; &nbsp;&nbsp; </span></p><p><span>-- 可通过 obj_name '对象名称' 查看具体的父亲结构</span></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
